@@ -10,7 +10,7 @@
     <div class="login-container">
         <div class="login-form">
             <h1>Login</h1>
-            <form action="seu-script-de-autenticacao.php" method="POST">
+            <form>
                 <div class="input-container">
                     <label for="username">Usuário:</label>
                     <input type="text" id="username" name="username" required>
@@ -19,9 +19,31 @@
                     <label for="password">Senha:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit" class="login-button" onclick="window.location.href='doctor_profile.html';">Entrar</button>
+                <button type="button" class="login-button" id="login-button">Entrar</button>
             </form>
         </div>
     </div>
+
+    <script>
+        const userData = {
+            username: 'ADMIN',
+            password: 'admin',
+        };
+
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const loginButton = document.getElementById('login-button');
+
+        loginButton.addEventListener('click', () => {
+            const enteredUsername = usernameInput.value;
+            const enteredPassword = passwordInput.value;
+
+            if (enteredUsername === userData.username && enteredPassword === userData.password) {
+                window.location.href = 'doctor_profile.html';
+            } else {
+                alert('Credenciais inválidas. Tente novamente.');
+            }
+        });
+    </script>
 </body>
 </html>
