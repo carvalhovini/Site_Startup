@@ -25,10 +25,24 @@
     </div>
 
     <script>
-        const userData = {
-            username: 'ADMIN',
-            password: 'admin',
-        };
+        const userData = [
+            {
+                username: 'ADMIN',
+                password: 'admin',
+            },
+            {
+                username: 'Vini',
+                password: '2605',
+            },
+            {
+                username: 'Yago',
+                password: '0411',
+            },
+            {
+                username: 'Lucas',
+                password: 'Gayzao',
+            }
+        ];
 
         const usernameInput = document.getElementById('username');
         const passwordInput = document.getElementById('password');
@@ -38,7 +52,10 @@
             const enteredUsername = usernameInput.value;
             const enteredPassword = passwordInput.value;
 
-            if (enteredUsername === userData.username && enteredPassword === userData.password) {
+            // Use find() para procurar um usuário com correspondência nas credenciais inseridas
+            const user = userData.find(user => user.username === enteredUsername && user.password === enteredPassword);
+
+            if (user) {
                 window.location.href = 'doctor_profile.html';
             } else {
                 alert('Credenciais inválidas. Tente novamente.');
