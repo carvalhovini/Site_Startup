@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-       <a href="index.html" style="text-decoration: none;"> <h1>MedConnect Suporte</h1> </a>
+        <a href="index.html" style="text-decoration: none;"> <h1>MedConnect Suporte</h1> </a>
         <div class="button-container">
             <a href="login.html" class="login-button">Login</a>
             <a href="support.html" class="login-button">Suporte</a>
@@ -17,17 +17,14 @@
     </header>
     <main>
         <div class="chat-window">
-            <div class="chat-messages">
+            <div class="chat-messages" id="chat-messages">
                 <div class="message received">
                     <p>Olá! Como posso ajudá-lo?</p>
                 </div>
-                <div class="message sent">
-                    <p>Eu tenho uma pergunta sobre uma consulta.</p>
-                </div>
             </div>
             <div class="chat-input-container">
-                <input type="text" placeholder="Digite sua mensagem">
-                <button>Enviar</button>
+                <input type="text" placeholder="Digite sua mensagem" id="user-message">
+                <button id="send-button">Enviar</button>
             </div>
         </div>
         
@@ -44,5 +41,31 @@
             </ul>
         </div>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatMessages = document.getElementById("chat-messages");
+            const userMessageInput = document.getElementById("user-message");
+            const sendButton = document.getElementById("send-button");
+        
+            sendButton.addEventListener("click", function () {
+                const userMessage = userMessageInput.value;
+                if (userMessage) {
+                    appendUserMessage(userMessage);
+                    userMessageInput.value = "";
+                }
+            });
+        
+            function appendUserMessage(message) {
+                const messageDiv = document.createElement("div");
+                messageDiv.className = "message sent";
+                messageDiv.innerHTML = `<p>${message}</p>`;
+                chatMessages.appendChild(messageDiv);
+        
+                // Role a tela de chat para a parte inferior para exibir a nova mensagem
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        });
+    </script>
 </body>
 </html>
