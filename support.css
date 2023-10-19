@@ -1,3 +1,6 @@
+/* support.css */
+
+/* Estilo global */
 body {
     background-image: url('background.jpg');
     background-size: cover;
@@ -63,12 +66,6 @@ main {
 }
 
 /* Estilo do chat */
-.chat-container {
-    width: 48%;
-    text-align: left;
-    position: relative; /* Adicione esta linha para posicionar o botão dentro do container */
-}
-
 .chat-window {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -99,30 +96,6 @@ main {
 .message.sent {
     background-color: #27C2E1;
     color: #fff;
-}
-
-.chat-input {
-    margin-top: 10px;
-}
-
-.message {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-.message.received {
-    background-color: #f0f0f0;
-}
-
-.message.sent {
-    background-color: #27C2E1;
-    color: #fff;
-}
-
-.chat-input {
-    margin-top: 0px;
-
 }
 
 .chat-input-container {
