@@ -39,6 +39,7 @@ header {
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .login-button:hover, .support-button:hover {

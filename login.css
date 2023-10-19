@@ -69,6 +69,7 @@ input {
     font-weight: bold;
     display: block;
     margin: 15px auto; /* Adicione margem à esquerda e à direita para ajustar a posição na horizontal */
+    text-decoration: none;
 }
 
 
