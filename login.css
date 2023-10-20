@@ -1,6 +1,6 @@
 /* login.css */
 body {
-    background-image: url('/IMG/imagem.jpg'); /* Configura a imagem como plano de fundo */
+    background-image: url('imagem.jpg'); /* Configura a imagem como plano de fundo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
