@@ -63,6 +63,12 @@
         <div class="prescription">
             <h2>Receita Médica</h2>
             <textarea rows="10" cols="50" placeholder="Escreva a receita médica aqui"></textarea>
+        
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="file">Anexar Arquivo:</label>
+                <input type="file" name="file" id="file">
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </main>
 </body>
