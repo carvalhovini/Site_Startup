@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MedConnect</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form>
+                <div class="input-container">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="button" class="login-button" id="login-button">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const userData = [
+            {
+                username: 'Vini',
+                password: '2605',
+                profileURL: 'doctor_profile_vini.html'
+            },
+            {
+                username: 'Yago',
+                password: '0411',
+                profileURL: 'doctor_profile_yago.html'
+            },
+            {
+                username: 'Lucas',
+                password: 'Gayzao',
+                profileURL: 'doctor_profile_lucas.html'
+            }
+        ];
+
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const loginButton = document.getElementById('login-button');
+
+        loginButton.addEventListener('click', () => {
+            const enteredUsername = usernameInput.value;
+            const enteredPassword = passwordInput.value;
+
+            // Use find() para procurar um usuário com correspondência nas credenciais inseridas
+            const user = userData.find(user => user.username === enteredUsername && user.password === enteredPassword);
+
+            if (user) {
+                window.location.href = user.profileURL;
+            } else {
+                alert('Credenciais inválidas. Tente novamente.');
+            }
+        });
+    </script>
+</body>
+</html>
