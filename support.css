@@ -49,7 +49,7 @@ header {
 h1 {
     color: #fff;
     font-size: 36px;
-    margin: 0px; /* Remova a margem padrão do h1 */
+    margin: 0; /* Remova a margem padrão do h1 */
     padding: 10px 20px; /* Adicione espaço interno (padding) ao redor do h1 */
 }
 
@@ -126,4 +126,34 @@ button {
 
 button:hover {
     background-color: #1A98B9;
+}
+
+.contact-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
 }
