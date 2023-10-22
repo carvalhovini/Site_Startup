@@ -49,7 +49,7 @@ header {
 h1 {
     color: #fff;
     font-size: 36px;
-    margin: 0; /* Remova a margem padrão do h1 */
+    margin: 0px; /* Remova a margem padrão do h1 */
     padding: 10px 20px; /* Adicione espaço interno (padding) ao redor do h1 */
 }
 
