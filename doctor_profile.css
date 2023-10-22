@@ -45,8 +45,8 @@ header {
 h1 {
     color: #333;
     font-size: 36px;
-    margin: 0;
-    padding: 10px 20px;
+    margin: 0; /* Remova a margem padrão do h1 */
+    padding: 10px 20px; /* Adicione espaço interno (padding) ao redor do h1 */
 }
 
 main {
@@ -106,3 +106,4 @@ li a {
 li a:hover {
     font-size: 20px; /* Aumenta o tamanho ao passar o mouse */
 }
+
