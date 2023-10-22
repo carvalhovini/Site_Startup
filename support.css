@@ -49,6 +49,8 @@ header {
 h1 {
     color: #fff;
     font-size: 36px;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 main {
