@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Paciente - MedConnect</title>
+    <link rel="stylesheet" href="/CSS/patient_profile.css">
+</head>
+<body>
+    <header>
+        <h1>MedConnect</h1>
+        <div class="button-container">
+            <a href="login.html" class="login-button" style="text-decoration: none;">Login</a>
+            <a href="support.html" class="login-button"style="text-decoration: none;" >Suporte</a>
+            <a href="index.html" class="login-button"  style="text-decoration: none;">Home</a>
+        </div>
+    </header>
+    <main>
+        <div class="patient-info">
+            <a href="/index.html" class="back-button" style="text-decoration: none;">Voltar</a>
+            <img src="/IMG/patient_photo.jpg" alt="Foto do Paciente">
+            <h2>Paulo Rocha</h2>
+            <p>Data de Nascimento: 26/05/2000</p>
+            <p>CPF: 123.456.000-00</p>
+            <p>Endereço: Ceilandia, QN 7</p>
+        </div>
+        <div class="medical-history">
+            <h2>Histórico Médico</h2>
+            <p>O paciente Paulo Rocha possui um histórico médico com as seguintes informações:</p>
+            <ul>
+                <li>Tratamento de otite em 2020</li>
+                <li>Cirurgia da medula em 2010</li>
+                <li>Internação por uso de entorpecentes</li>
+            </ul>
+        </div>
+        <div class="appointment-history">
+            <h2>Histórico de Consultas</h2>
+            <p>Consultas anteriores do paciente:</p>
+            <ul>
+                <li>Consulta em 2019 - Dr. Carlos</li>
+                <li>Consulta em 2021 - Dr. Almeida</li>
+                <li>Consulta em 2023 - Dra. Carlos</li>
+            </ul>
+        </div>
+        <div class="medications">
+            <h2>Medicamentos Recentes</h2>
+            <p>Lista de medicamentos tomados recentemente:</p>
+            <ul>
+                <li>Paracetamol - 500mg</li>
+                <li>Amoxicilina - 250mg</li>
+                <li>Dipirona - 50mg</li>
+                <li>Dipirona - 75mg</li>
+            </ul>
+        </div>
+        <div class="allergies">
+            <h2>Alergias</h2>
+            <p>Alergias conhecidas do paciente:</p>
+            <ul>
+                <li>Nenhuma alergia</li>
+            </ul>
+        </div>
+        <div class="prescription">
+            <h2>Receita Médica</h2>
+            <textarea rows="10" cols="50" placeholder="Escreva a receita médica aqui"></textarea>
+        
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="file">Anexar Arquivo:</label>
+                <input type="file" name="file" id="file">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
