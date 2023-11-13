@@ -1,0 +1,80 @@
+/* login.css */
+body {
+    background-image: url('/IMG/imagem.jpg'); /* Configura a imagem como plano de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #27C2E1;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 10px;
+    text-align: left; /* Caso queira alinhar o texto à esquerda no interior do formulário */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-button {
+    background-color: #27C2E1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px; /* Mantém a margem superior */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 15px auto; /* Adicione margem à esquerda e à direita para ajustar a posição na horizontal */
+    text-decoration: none;
+}
+
+
+
+
+.login-button:hover {
+    background-color: #1A98B9;
+}
