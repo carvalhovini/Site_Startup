@@ -2,7 +2,7 @@
 
 /* Estilo global */
 body {
-    background-image: url('/IMG/background.jpg');
+    background-image: url('./IMG/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #f8f8f8;
